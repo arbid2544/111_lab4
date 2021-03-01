@@ -43,12 +43,44 @@ int main()
 		    glass[0]=x;
 		    break;
 	    }*/
+	    if(letters[n]==65)
+	    {
+	    	w=glass[2];
+		    glass[2]=glass[1];
+		    glass[1]=w;
+		}
 	    if(letters[n]==66)
 	    {
 	    	w=glass[3];
 		    glass[3]=glass[0];
 		    glass[0]=w;
-		    printf("Ok");
+		}
+		if(letters[n]==67)
+		{
+			w=glass[0];
+		    glass[0]=glass[2];
+		    glass[2]=w;
+		    x=glass[1];
+		    glass[1]=glass[3];
+		    glass[3]=x;
+		}
+		if(letters[n]==68)
+		{
+			w=glass[0];
+		    glass[0]=glass[1];
+		    glass[1]=w;
+		    x=glass[2];
+		    glass[2]=glass[3];
+		    glass[3]=x;
+		}
+		if(letters[n]==69)
+		{
+			w=glass[2];
+		    glass[2]=glass[1];
+		    glass[1]=w;
+		    x=glass[3];
+		    glass[3]=glass[0];
+		    glass[0]=x;
 		}
 		n++;
 	}
