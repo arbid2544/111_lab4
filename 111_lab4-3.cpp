@@ -4,7 +4,7 @@ int main()
 {
 	char letters[200];
 	int n=0;
-	fgets(letters,sizeof letters,stdin);
+	gets(letters);
 	while(letters[n]!='\0')
 	{
 		if(letters[n]!=letters[n+1])
