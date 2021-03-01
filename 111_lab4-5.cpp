@@ -2,7 +2,7 @@
 int main()
 {
 	char letters[50];
-    int glass[4]={1,0,0,0},n=0,w,x,i,z,m;
+    int glass[4]={1,0,0,0},n=0,w,i,x,z,m;
     scanf("%d",&m);
     int max[m]={0};
     for(z=0;z<m;z++){
